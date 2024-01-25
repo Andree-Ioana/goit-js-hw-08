@@ -22,7 +22,7 @@ feedbackForm.addEventListener("input", () => {
 });
 
 const saveDataForm = throttle(() => {
-    const formValue = {
+    let formValue = {
         email: emailForm.value,
         message: messageForm.value,
     };
@@ -31,7 +31,7 @@ const saveDataForm = throttle(() => {
 
 feedbackForm.addEventListener("submit", (e) => {
     e.preventDefault();
-    const formValue = {
+    let formValue = {
         email: emailForm.value,
         message: messageForm.value,
     };
