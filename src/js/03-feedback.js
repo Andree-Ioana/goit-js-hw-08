@@ -12,8 +12,8 @@ const load = () => {
     const dataSave = localStorage.getItem(localStorageKey);
     if(dataSave){
         const{email, message} = JSON.parse(dataSave);
-        email = emailForm.value;
-        message = messageForm.value;
+        emailForm.value = email; 
+        messageForm.value = message;
     }
 };
 
